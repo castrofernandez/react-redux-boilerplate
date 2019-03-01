@@ -20,12 +20,17 @@ module.exports = merge(common, {
             }, {
                 loader: "sass-loader"
             },]
+        },
+        {
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            use: ['babel-loader', 'eslint-loader']
         }]
     },
     plugins: [                           
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
-            title: 'ReactReduxSassStarterkit',
+            title: 'React+Redux boilerplate',
             inject: false,
             template: require('html-webpack-template'),
             bodyHtmlSnippet :'<main class="main" id="app"></main>'
