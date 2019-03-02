@@ -8,3 +8,6 @@
 
 3. Build
 > npm run build
+
+4. Run tests
+> npm test
