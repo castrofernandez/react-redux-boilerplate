@@ -1,4 +1,15 @@
-# React+Redux boilerplate
+# React + Redux boilerplate
+
+* React
+* Redux
+* Webpack
+* Eslint
+* Sass
+* Babel
+* Jest
+* Enzyme
+
+---
 
 1. Install
 > npm install

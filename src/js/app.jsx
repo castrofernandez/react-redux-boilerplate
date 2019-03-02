@@ -7,13 +7,9 @@ export default class App extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <header className="header">App Header</header>
-                <section className="body">
-                    <h1 className="title">
-                    React+Redux boilerplate
-                    </h1>
-                </section>
-                <footer className="header">App Footer</footer>
+                <h1 className="title">
+                React+Redux boilerplate
+                </h1>
             </React.Fragment>
         );
     }
