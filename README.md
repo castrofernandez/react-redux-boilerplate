@@ -12,13 +12,21 @@
 ---
 
 1. Install
-> npm install
+```shell
+npm install
+```
 
 2. Start
-> npm start
+```shell
+npm start
+```
 
 3. Build
-> npm run build
+```shell
+npm run build
+```
 
 4. Run tests
-> npm test
+```shell
+npm test
+```
