@@ -5,6 +5,7 @@
 * Webpack
 * Eslint
 * Sass
+* Styled components
 * Babel
 * Jest
 * Enzyme
