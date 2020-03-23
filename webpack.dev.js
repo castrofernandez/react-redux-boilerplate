@@ -4,12 +4,12 @@ const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
-    mode: 'development',   
+    mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
         hot: true
-    },  
+    },
     module: {
         rules: [{
             test: /\.scss$/,
@@ -19,7 +19,7 @@ module.exports = merge(common, {
                 loader: "css-loader"
             }, {
                 loader: "sass-loader"
-            },]
+            }]
         },
         {
             test: /\.(js|jsx)$/,
@@ -27,13 +27,13 @@ module.exports = merge(common, {
             use: ['babel-loader', 'eslint-loader']
         }]
     },
-    plugins: [                           
+    plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             title: 'React+Redux boilerplate',
             inject: false,
             template: require('html-webpack-template'),
-            bodyHtmlSnippet :'<main class="main" id="app"></main>'
-        })   
+            bodyHtmlSnippet: '<main class="main" id="app"></main>'
+        })
     ]
 });

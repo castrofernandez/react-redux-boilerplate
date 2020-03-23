@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Example from './components/example';
+import ExampleContext from './context/example';
 
 const DecoratedSpan = styled.span`
     font-style: italic;
@@ -13,11 +15,12 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <ExampleContext.Provider value={'Hello World'}>
                 <h1 className="title">
-                React+Redux boilerplate <DecoratedSpan>(with styled components)</DecoratedSpan>
+                    React+Redux boilerplate <DecoratedSpan>(with styled components)</DecoratedSpan>
                 </h1>
-            </React.Fragment>
+                <Example />
+            </ExampleContext.Provider>
         );
     }
 }
